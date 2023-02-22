@@ -15,8 +15,8 @@ const questionsEl = document.querySelector("#questions");
 let questionEl = document.querySelector("#question");
 // how many questions they have answered
 let questionCount = 0;
-// div yaynay
-const yaynayEl = document.querySelector("#yaynay");
+// div yesornot
+const yesornotEl = document.querySelector("#yesornot");
 
 // section final
 const finalEl = document.querySelector("#final");
@@ -130,10 +130,10 @@ function setQuestion(id) {
 function checkAnswer(event) {
     event.preventDefault();
 
-    // show section for yaynay and append message
-    yaynayEl.style.display = "block";
+    // show section for yesornot and append message
+    yesornotEl.style.display = "block";
     let p = document.createElement("p");
-    yaynayEl.appendChild(p);
+    yesornotEl.appendChild(p);
 
     // time out after 1 second
     setTimeout(function () {
