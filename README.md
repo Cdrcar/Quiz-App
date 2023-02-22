@@ -37,3 +37,7 @@ THEN I can save my initials and my score
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## Mentions
+
+Thank you skaliaperumal from AskBCS Learning Assistant for your help!
