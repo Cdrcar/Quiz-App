@@ -1,0 +1,122 @@
+html, body {
+    height: 100%;
+}
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.time {
+    font-size: 18px;        
+    position:absolute;
+    top:0px;
+    right:10px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ #intro{
+   
+    margin: auto;
+    width: 800px;
+    background-color: rgb(240, 229, 240);
+    height: 250px;
+    border-radius: 5px;
+    border: 1px solid rgb(31, 31, 79);
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(31, 31, 79);
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(31, 31, 79);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-wrap: wrap;
+}
+
+.p {
+    font-size: 15px;
+    text-align: center;
+    color: rgb(31, 31, 79);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px 80px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.start-button{
+
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+ 
+}
+#start {
+    font-size: 15px;
+    text-align: center;
+    color: rgb(31, 31, 79);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgb(31, 31, 79);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(240, 229, 240);
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(31, 31, 79);
+ 
+   
+}
+#start:hover {
+    background-color: rgb(31, 31, 79);
+    color: white;
+}
+
+
+/* hide sections until they are shown via the click events */
+#questions,
+#final,
+#highscores,
+#yaynay {
+    display: none;  
+  } 
+/* Remove bullet points from answers list */
+ul.nobullets {
+    list-style-type: none;
+    }
+    
+    /* Answer button styling */
+    .ansBtn,
+    .ansBtn:hover,
+    .ansBtn:active,
+    .ansBtn:focus,
+    .ansBtn:active:focus {
+        box-shadow: none;
+        outline: none;
+        background-color:  rgb(31, 31, 79);
+        color: white;
+    }
+    
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
