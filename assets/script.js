@@ -33,6 +33,7 @@ let scoreList = [];
 // buttons
 // start
 const startBtn = document.querySelector("#start");
+
 // answer button class
 const ansBtn = document.querySelectorAll("button.ansBtn")
 // answer1
@@ -222,6 +223,9 @@ submitScrBtn.addEventListener("click", addScore);
 goBackBtn.addEventListener("click", function () {
     highscoresEl.style.display = "none";
     introEl.style.display = "block";
+    introEl.style.textAlign="center";
+    document.querySelector('.start-button').style.display="flex";
+    document.querySelector('.start-button').style.justifyContent="center";
     secondsLeft = 75;
     timeEl.textContent = `Time:${secondsLeft}s`;
 });
@@ -231,6 +235,7 @@ clearScrBtn.addEventListener("click", clearScores);
 
 // View/Hide High Scores Button
 viewScrBtn.addEventListener("click", function () {
+    introEl.style.display="none";
     if (highscoresEl.style.display === "none") {
         highscoresEl.style.display = "block";
     } else if (highscoresEl.style.display === "block") {

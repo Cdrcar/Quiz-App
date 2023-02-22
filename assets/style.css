@@ -57,17 +57,7 @@ h1{
     display: flex;
 }
 
-.start-button{
 
-  position: absolute;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-
- 
-}
 #start {
     font-size: 15px;
     text-align: center;
@@ -104,14 +94,28 @@ ul.nobullets {
     
     /* Answer button styling */
     .ansBtn,
-    .ansBtn:hover,
+   
     .ansBtn:active,
     .ansBtn:focus,
     .ansBtn:active:focus {
-        box-shadow: none;
-        outline: none;
-        background-color:  rgb(31, 31, 79);
-        color: white;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(31, 31, 79);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgb(31, 31, 79);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(240, 229, 240);
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgb(31, 31, 79);
+    margin-bottom: 5px;
+    }
+
+    .ansBtn:hover{
+    background-color: rgb(31, 31, 79);
+    color: white;
     }
     
     .footer {
@@ -120,3 +124,29 @@ ul.nobullets {
         width: 100%;
         text-align: center;
     }
+
+    #submit-score,
+    #view-scores,
+    #goback,
+    #clearscores {
+        color: rgb(31, 31, 79);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 1px solid rgb(31, 31, 79);
+        background-color: rgb(240, 229, 240);
+        padding: 10px;
+        box-shadow: 2px 2px 5px rgb(31, 31, 79);
+    }
+
+    #submit-score:hover,
+    #view-scores:hover,
+    #goback:hover,
+    #clearscores:hover {
+        background-color: rgb(31, 31, 79);
+        color: white;
+    }
+
+
+
+   
