@@ -2,12 +2,13 @@
 const introEl = document.querySelector("#intro");
 
 
+
 //Questions
+let questionCount = 0;
+
 const questionsEl = document.querySelector("#questions");
 
 let questionEl = document.querySelector("#question");
-
-let questionCount = 0;
 
 const yesornotEl = document.querySelector("#yesornot");
 
@@ -21,13 +22,16 @@ let scoreListEl = document.querySelector("#score-list");
 
 let scoreList = [];
 
+
+
 // Score and Time
-let timeEl = document.querySelector("p.time");
 let secondsLeft = 80;
+let timeEl = document.querySelector("p.time");
 let scoreEl = document.querySelector("#score");
 
-// Buttons
 
+
+// Buttons
 const startBtn = document.querySelector("#start");
 
 const ansBtn = document.querySelectorAll("button.ansBtn")
@@ -47,6 +51,7 @@ const goBackBtn = document.querySelector("#goback");
 const clearScrBtn = document.querySelector("#clearscores");
 
 const viewScrBtn = document.querySelector("#view-scores");
+
 
 // Array of Objects
 const questions = [ 
@@ -120,7 +125,6 @@ function setQuestion(id) {
 function checkAnswer(event) {
     event.preventDefault();
 
-    // show section for yesornot and append message
     yesornotEl.style.display = "block";
     let p = document.createElement("p");
     yesornotEl.appendChild(p);
@@ -191,14 +195,14 @@ function displayScores() {
     }
 }
 
-// clear scores
+// Clear scores
 function clearScores() {
     localStorage.clear();
     scoreListEl.innerHTML="";
 }
 
 // EventListeners
-// Start timer and display first question when click start quiz
+// When click start quiz, the Quiz will star
 startBtn.addEventListener("click", startQuiz);
 
 // Check answers loop
