@@ -31,8 +31,7 @@ html, body {
     padding: 10px;
     box-shadow: 2px 2px 5px rgb(31, 31, 79);
     display: flex;
-    position: relative;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -57,6 +56,12 @@ h1{
     display: flex;
 }
 
+.start-button {
+    display:flex ;
+    justify-content: center;
+    text-align: center;
+}
+
 
 #start {
     font-size: 15px;
@@ -67,6 +72,7 @@ h1{
     border-radius: 5px;
     border: 1px solid rgb(31, 31, 79);
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     background-color: rgb(240, 229, 240);
     padding: 10px;
@@ -80,7 +86,7 @@ h1{
 }
 
 
-/* hide sections until they are shown via the click events */
+/* Hide sections until they are shown via the click events */
 #questions,
 #final,
 #highscores,
