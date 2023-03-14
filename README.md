@@ -23,14 +23,11 @@ WHEN the game is over
 THEN I can save my initials and my score
 ```
 ## Final Result
-![Quiz App](./assets/04-01.png)
-![Quiz App](./assets/04-02.png)
-![Quiz App](./assets/04-03.png)
-![Quiz App](./assets/04-04.png)
-![Quiz App](./assets/04-05.png)
-![Quiz App](./assets/04-06.png)
-![Quiz App](./assets/04-07.png)
-![Quiz App](./assets/04-08.png)
+![Quiz App](./assets/quiz01.png)
+![Quiz App](./assets/quiz02.png)
+![Quiz App](./assets/quiz03.png)
+![Quiz App](./assets/quiz04.png)
+
 ## Link to Quiz App
 
 [Quiz App JavaScript](https://cdrcar.github.io/challenge04-Quiz-App/)

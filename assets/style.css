@@ -1,5 +1,8 @@
 html, body {
     height: 100%;
+    background-color:rgb(250 243 243);
+    justify-content: center;
+
 }
 
 *{
@@ -15,25 +18,44 @@ html, body {
 .container {
     width: 100vw;
     height: 100vh;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
+    
+}
+
+.quiz {
+    font-size: 4rem;
+    color: rgb(90, 189, 178);
+    font-weight: bold;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 40px;
 }
 
  #intro{
    
     margin: auto;
     width: 800px;
-    background-color: rgb(240, 229, 240);
+    background-color: rgb(249 239 255);
     height: 250px;
-    border-radius: 5px;
-    border: 1px solid rgb(31, 31, 79);
+    border-radius: 10px;
+    border: 1px solid rgb(90, 189, 178);
     padding: 10px;
     box-shadow: 2px 2px 5px rgb(31, 31, 79);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
+    text-align: center;
+}
+#intro p{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -41,7 +63,7 @@ html, body {
 h1{
     font-size: 30px;
     text-align: center;
-    color: rgb(31, 31, 79);
+    color: rgb(100 40 124);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     flex-wrap: wrap;
 }
@@ -49,7 +71,7 @@ h1{
 .p {
     font-size: 15px;
     text-align: center;
-    color: rgb(31, 31, 79);
+    color: rgb(100 40 124);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     flex-wrap: wrap;
     display: flex;
@@ -65,7 +87,7 @@ h1{
 #start {
     font-size: 15px;
     text-align: center;
-    color: rgb(31, 31, 79);
+    color: rgb(253, 253, 253);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     cursor: pointer;
     border-radius: 5px;
@@ -73,7 +95,7 @@ h1{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgb(240, 229, 240);
+    background-color: rgb(100 40 124);
     padding: 10px;
     box-shadow: 2px 2px 5px rgb(31, 31, 79);
  
@@ -84,6 +106,34 @@ h1{
     color: white;
 }
 
+#questions{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgb(90, 189, 178);
+    width: 50%;
+    margin: auto;
+    padding: 10px 10px;
+    color: rgb(100 40 124);;
+    box-shadow: 2px 2px 5px rgb(31, 31, 79);
+    
+}
+ul.nobullets {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#final,
+#highscores {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
 
 /* Hide sections until they are shown via the click events */
 #questions,
@@ -105,17 +155,18 @@ ul.nobullets {
     .ansBtn:active:focus {
     font-size: 15px;
     text-align: center;
-    color: rgb(31, 31, 79);
+    color: rgb(253, 253, 253);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     cursor: pointer;
     border-radius: 5px;
     border: 1px solid rgb(31, 31, 79);
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(240, 229, 240);
+    background-color: rgb(100 40 124);
     padding: 10px;
     box-shadow: 2px 2px 5px rgb(31, 31, 79);
     margin-bottom: 5px;
+    
     }
 
     .ansBtn:hover{
@@ -134,14 +185,15 @@ ul.nobullets {
     #view-scores,
     #goback,
     #clearscores {
-        color: rgb(31, 31, 79);
+        color: rgb(240, 240, 240);
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         cursor: pointer;
         border-radius: 5px;
         border: 1px solid rgb(31, 31, 79);
-        background-color: rgb(240, 229, 240);
+        background-color: rgb(100 40 124);
         padding: 10px;
         box-shadow: 2px 2px 5px rgb(31, 31, 79);
+        
     }
 
     #submit-score:hover,
