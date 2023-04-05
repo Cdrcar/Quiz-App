@@ -30,7 +30,7 @@ THEN I can save my initials and my score
 
 ## Link to Quiz App
 
-[Quiz App JavaScript](https://cdrcar.github.io/challenge04-Quiz-App/)
+[Quiz App JavaScript](https://cdrcar.github.io/Quiz-App/)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
